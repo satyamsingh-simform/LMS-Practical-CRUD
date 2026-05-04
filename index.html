@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="./src/style/main.css">
 </head>
 <body>
+    <div class="app">
+        <header class="header">
+            <h1>Habit Tracker</h1>
+        </header>
 
+        <section class="add-habit">
+            <form id="add-habit-form">
+                <input type="text" id="habit-input" placeholder="enter the new habit" required/>
+                <button class="add-habit-btn" type="submit">Add Habit</button>
+            </form>
+        </section>
+
+        <section class="tracker">
+            <div id="habit-list" class="habit-list"></div>
+            <div class="tracker-div-bottom">
+                <div id="calendar-row" class="calendar"></div>
+                <div id="grid-container" class="grid-container"></div>
+                <div id="count-row" class="count-row"></div> 
+            </div>
+        </section>
+    </div>
     <script type="module" src="./src/main.ts"></script>
 </body>
 </html>
