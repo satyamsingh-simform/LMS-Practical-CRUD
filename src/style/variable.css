@@ -3,22 +3,25 @@
     /* Colors */
     --bg-main: #1e1e1e;
     --bg-secondary:#1e293b;
+    --bg-light:#273449;
     --bg-btn: #2d2d2d;
     --bg-btn-hover: #3a3a3a;
     --bg-equal: #3aa0d8;
 
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
+    --text-light:#94a3b8;
+
 
     /* spacing */
     --space-1: 4px;
     --space-2: 8px;
+    --space-10:10px;
     --space-3: 12px;
     --space-4: 16px;
     --space-5: 20px;
     --space-6: 24px;
     --space-8: 32px;
-    --space-10: 40px;
     --space-12: 48px;
     --space-15:60px;
     --space-16: 64px;
