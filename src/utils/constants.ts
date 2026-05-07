@@ -1,0 +1,1 @@
+export const STORAGE_KEY="everyday-habit-tracker";

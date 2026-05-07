@@ -57,3 +57,21 @@ body{
   grid-template-columns:150px 1fr;
   gap:10px;
 }
+
+
+.habit-list{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:20px;
+}
+
+.habit-item{
+  background:var(--bg-secondary);
+  padding:14px 16px;
+  border-radius:var(--radius-md);
+  font-size:var(--font-md);
+  color:var(--text-primary);
+  transition:var(--transition);
+}
+
