@@ -1,5 +1,5 @@
 import {addHabit,getHabits} from "../services/habitService.ts";
-import{ addHabitForm, habitInput, habitList}from "../utils/elements.ts";
+import{ addHabitForm, habitInput, habitList} from "../utils/elements.ts";
 
 /**
  * @description extract value from input, pass it to addHabit.
@@ -26,7 +26,6 @@ export function initHabit(){
  */
 export function renderHabits(){
   const list=habitList;
-
   if(!list) return;
 
   list.innerHTML="";
