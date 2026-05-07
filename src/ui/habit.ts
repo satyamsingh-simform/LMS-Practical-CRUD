@@ -13,8 +13,14 @@ export function initHabit(renderAll:()=>void){
   form.addEventListener("submit",e=>{
     e.preventDefault();
     const value=input.value;
-    if(!value) return;
 
+    const onlyText=/^[A-Za-z ]+$/;
+    if(!onlyText.test(value)){
+      alert("Habit should contain only text");
+      return;
+    }
+
+    if(!value) return;
     addHabit(value);
     renderAll();
     form.reset();
