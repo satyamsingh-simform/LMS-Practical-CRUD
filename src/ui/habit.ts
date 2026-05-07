@@ -1,6 +1,9 @@
 import {addHabit,getHabits} from "../services/habitService.ts";
 import{ addHabitForm, habitInput, habitList} from "../utils/elements.ts";
 
+/**
+ * @description extract value from input, pass it to addHabit.
+ */
 export function initHabit(){
   const form=addHabitForm;
   const input=habitInput;
@@ -18,6 +21,9 @@ export function initHabit(){
   });
 }
 
+/**
+ * @description render all habits on UI.
+ */
 export function renderHabits(){
   const list=habitList;
   if(!list) return;
