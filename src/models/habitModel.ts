@@ -3,3 +3,6 @@ export interface Habit{
   name:string;
   createdAt:string;
 }
+export interface StorageData{
+  habits:Habit[];
+}
