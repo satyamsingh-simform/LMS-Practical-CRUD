@@ -4,6 +4,7 @@ const habitList=document.querySelector<HTMLDivElement>("#habit-list");
 const calendarRow=document.querySelector<HTMLDivElement>("#calendar-row");
 const gridContainer=document.querySelector<HTMLDivElement>("#grid-container");
 const trackerDivBottom=document.querySelector<HTMLDivElement>(".tracker-div-bottom");
+const countRow=document.querySelector<HTMLDivElement>("#count-row");
 
 export{
   addHabitForm,
@@ -11,5 +12,6 @@ export{
   habitList,
   calendarRow,
   gridContainer,
-  trackerDivBottom
+  trackerDivBottom,
+  countRow
 };

@@ -1,5 +1,6 @@
 import { getHabits } from "../services/habitService";
-import { isCompleted, toggleLog } from "../services/logService";
+import { isCompleted, isSkipped, toggleLog } from "../services/logService";
+import { renderCount } from "./countUI";
 import { gridContainer } from "../utils/elements";
 
 export function renderGrid(dates:string[]){
@@ -19,9 +20,15 @@ export function renderGrid(dates:string[]){
       if(isCompleted(habit.id,date)){
         cell.classList.add("done");
       }
+      if(isSkipped(habit.id,date)){
+        cell.classList.add("skip");
+        cell.textContent="SKIP";
+      }
+
       cell.addEventListener("click",()=>{
         toggleLog(habit.id,date);
         renderGrid(dates);
+        renderCount(dates);
       });
       row.appendChild(cell);
     });

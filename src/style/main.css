@@ -147,3 +147,52 @@ body{
 .grid-cell.done{
   background:#22c55e;
 }
+
+.count-row{
+  display:flex;
+  gap:var(--space-10);
+  margin-top:var(--space-10);
+}
+
+.count-box{
+  width:var(--space-15);
+  text-align:center;
+  color:var(--text-light);
+}
+
+.grid-cell.skip{
+  background:var(--bg-skip);
+  color:var(--text-primary);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:var(--space-3);
+  font-weight:600;
+}
+
+.habit-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.delete-btn{
+  background:none;
+  border:none;
+  color:var(--text-primary);
+  cursor:pointer;
+  font-size:var(--space-4);
+}
+
+.count-box{
+  min-width:var(--space-15);
+  width:var(--space-15);
+  height:var(--space-5);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  color:var(--text-light);
+  font-size:var(--space-4);
+}
