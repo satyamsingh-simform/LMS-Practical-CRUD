@@ -32,19 +32,17 @@ export function toggleLog(habitId:string,date:string){
 }
 
 export function isCompleted(habitId:string,date:string){
-  return getData().logs.some(
-    log=>log.habitId===habitId &&
-    log.date===date &&
-    log.status==="done"
+  const log=getData().logs.find(
+    log=>log.habitId===habitId &&log.date===date
   );
+  return log?.status==="done";
 }
 
 export function isSkipped(habitId:string,date:string){
-  return getData().logs.some(
-    log=>log.habitId===habitId &&
-    log.date===date &&
-    log.status==="skip"
+  const log=getData().logs.find(
+    log=>log.habitId===habitId && log.date===date
   );
+  return log?.status==="skip";
 }
 
 export function getCountByDate(date:string){
